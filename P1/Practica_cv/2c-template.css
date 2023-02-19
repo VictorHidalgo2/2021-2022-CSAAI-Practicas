@@ -10,11 +10,17 @@
      font-family: "Death\ Star.otf";
      src: url("Death\ Star.otf");
   }
+
+  @font-face
+  {
+     font-family: "soloisthalf.ttf";
+     src: url("soloisthalf.ttf");
+  }
   
 
   body {
     background-image: url("fondo.png");
-    background-size:100%;
+    background-size:150%;
   }
 
   h1 {
@@ -26,63 +32,83 @@
     padding: 10px;
     margin: 50px;
     margin-bottom: 0px;
+    border: #fdc030 10px groove;
+    border-bottom: none;
+    background-color: black;
+    opacity: 70%;
     }
+  
+  h2{
+    text-align: center;
+    font-family: "soloisthalf.ttf";
+    color: #fdc030;
+  }
 
-  .apartados{
-    font-family: "HARRYP__";
-    font-size: 35px;
-    border-bottom: #AA7700 10px double;
-    padding: 10px;
-    display: inline-flex;
-    width: 95%;
-    height: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    justify-content: center;
-    align-items: center;
-    text-shadow:2px 2px grey;
-    }
+  li{
+    color: white;
+    /*list-style-image: url("Lightsaber.png"); */
+  }
 
   .cuerpo{
-      display: inline-flex;
-      padding: 0px;
-      margin: 50px;
-      margin-top: 0px;
-      margin-bottom: 0px;
-      border: #AA7700 10px double;
-      align-content: center;
-    }
+    display: inline-flex;
+    padding: 0px;
+    margin: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    align-content: center;
+    border: #fdc030 10px groove;
+    background-color: black;
+    opacity: 70%;
 
-  aside{
-      width: 30%;
-      border: #AA7700  10px;
+  }
+
+  p{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 0px;
+    text-align: justify;
+    color: white;
+  }
+
+    aside{
+      width: 45%;
       margin: 0px;
       padding:15px;
       text-align: justify;
+      border-right: #fdc030 10px groove;
+
     }
-/* Crear columnas de ancho diferente que se colocan una a continuación de la otra */
-.columna {
-float: left;
-padding: 10px;
-min-height: 500px;
-}
 
-.izquierda {
-width: 25%;
-}
+    address{
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      -webkit-column-count: 3;
+      -moz-column-count: 3;
+      column-count: 3;
+      margin-top: 20px;
+    }
 
-.derecha {
-width: 75%;
-}
+    header{
+      align-self: flex-end;
+      margin:10px;
+      padding: 0px;
+      text-align: center;
+      margin-right: 50px;
+      opacity: 65%;
+     }
 
-/* Clear floats despues de las columnas para eliminar la superposición */
-.filla:after {
-content: "";
-display: table;
-clear: both;
-}
-
+     footer{
+      align-self: flex-end;
+      margin:10px;
+      padding: 0px;
+      text-align: center;
+      margin-right: 50px;
+      opacity: 65%;
+     
+     }
 
 /* estilos para imágenes https://www.w3schools.com/css/css3_images.asp */
 /* posicionamiento de imágenes https://www.w3schools.com/css/css_positioning.asp */
