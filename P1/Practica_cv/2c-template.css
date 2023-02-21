@@ -57,7 +57,7 @@
     margin-bottom: 0px;
     align-content: center;
     border: #fdc030 10px groove;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   p{
