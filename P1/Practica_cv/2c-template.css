@@ -34,19 +34,19 @@
     margin-bottom: 0px;
     border: #fdc030 10px groove;
     border-bottom: none;
-    background-color: black;
-    opacity: 70%;
+    background-color: rgba(0, 0, 0, 0.7);
     }
   
   h2{
     text-align: center;
     font-family: "soloisthalf.ttf";
     color: #fdc030;
+    border-bottom: dashed;
   }
 
   li{
     color: white;
-    /*list-style-image: url("Lightsaber.png"); */
+    list-style-image: url("Lightsaber.png");
   }
 
   .cuerpo{
@@ -57,9 +57,7 @@
     margin-bottom: 0px;
     align-content: center;
     border: #fdc030 10px groove;
-    background-color: black;
-    opacity: 70%;
-
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   p{
@@ -109,7 +107,7 @@
       opacity: 65%;
      
      }
-
+    
 /* estilos para imágenes https://www.w3schools.com/css/css3_images.asp */
 /* posicionamiento de imágenes https://www.w3schools.com/css/css_positioning.asp */
 
