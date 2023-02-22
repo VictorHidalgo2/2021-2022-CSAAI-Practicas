@@ -20,7 +20,9 @@
 
   body {
     background-image: url("fondo.png");
-    background-size:150%;
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 
   h1 {
@@ -131,10 +133,12 @@
 /* Responsive layout - cuando el ancho de pantalla es menor a 600px, muestra las columnas apiladas. */
 /* Así conseguimos que el contenido se vea bien en dispositvos móviles */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1080px) {
     .columna {
       width: 100%;
     }
+
+
 
     .iresponsive {
         width: 100%;
