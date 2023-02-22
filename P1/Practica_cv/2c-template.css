@@ -134,10 +134,7 @@
 /* Así conseguimos que el contenido se vea bien en dispositvos móviles */
 
 @media screen and (max-width: 1080px) {
-    .aside {
-      width: 100%;
-    }
-    .cuerpo {
+    .columna {
       width: 100%;
     }
 
