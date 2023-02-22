@@ -1,0 +1,91 @@
+/* https://www.w3schools.com/howto/howto_css_two_columns.asp */
+/* https://developer.mozilla.org/es/docs/Web/CSS/box-sizing */
+/* Así definimos el comportamiento de caja para todos los elementos */
+* {
+    box-sizing: border-box;
+  }
+
+  @font-face
+  {
+     font-family: "Death\ Star.otf";
+     src: url("Death\ Star.otf");
+  }
+
+  @font-face
+  {
+     font-family: "soloisthalf.ttf";
+     src: url("soloisthalf.ttf");
+  }
+
+  body {
+    background-image: url("fondo_about.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  h1 {
+    font-family: "Death\ Star.otf";
+    font-size: 50px;
+    text-align: center;
+    color: #fdc030;
+    text-shadow:3px 3px rgb(0, 0, 0);
+    padding: 10px;
+    margin: 50px;
+    margin-bottom: 0px;
+    border: #fdc030 10px groove;
+    border-bottom: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    }
+  
+  h2{
+    text-align: center;
+    font-family: "soloisthalf.ttf";
+    color: #fdc030;
+    border-bottom: dashed;
+  }
+
+  li{
+    color: white;
+    list-style-image: url("Lightsaber.png");
+  }
+
+  .cuerpo{
+    display: inline-flex;
+    padding: 0px;
+    margin: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    align-content: center;
+    border: #fdc030 10px groove;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: justify;
+  }
+
+  p{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 0px;
+    text-align: justify;
+    color: white;
+  }
+
+/* estilos para imágenes https://www.w3schools.com/css/css3_images.asp */
+/* posicionamiento de imágenes https://www.w3schools.com/css/css_positioning.asp */
+
+.imagen{
+  float:inherit;
+  position:relative;
+  padding: 0px;
+  margin:0px;
+
+  right: 23px;
+}
+
+.iresponsive {
+    padding: 0 6px;
+    float: left;
+    width: 50%;
+    border-radius: 100%;
+  }
