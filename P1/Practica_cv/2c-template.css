@@ -17,6 +17,11 @@
      src: url("soloisthalf.ttf");
   }
   
+  @media only screen and (max-width: 767px) {
+    body {
+      background-image: url("fondo_movil.png");
+    }
+  }
 
   body {
     background-image: url("fondo.png");
