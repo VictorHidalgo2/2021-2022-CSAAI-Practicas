@@ -16,6 +16,7 @@
      font-family: "soloisthalf.ttf";
      src: url("soloisthalf.ttf");
   }
+  
 
   body {
     background-image: url("fondo.png");
@@ -59,7 +60,6 @@
     align-content: center;
     border: #fdc030 10px groove;
     background-color: rgba(0, 0, 0, 0.7);
-    text-align: justify;
   }
 
   p{
@@ -134,7 +134,7 @@
 /* Así conseguimos que el contenido se vea bien en dispositvos móviles */
 
 @media screen and (max-width: 1080px) {
-    .columna {
+    .cuerpo {
       width: 100%;
     }
 
