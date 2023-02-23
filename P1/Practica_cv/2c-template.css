@@ -50,18 +50,7 @@
     color: white;
     list-style-image: url("Lightsaber.png");
   }
-
-  .cuerpo{
-    display: inline-flex;
-    padding: 0px;
-    margin: 50px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    align-content: center;
-    border: #fdc030 10px groove;
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-
+  
   p{
     font-size: 15px;
     display: flex;
@@ -72,73 +61,99 @@
     color: white;
   }
 
-    aside{
-      width: 45%;
-      margin: 0px;
-      padding:15px;
-      text-align: justify;
-      border-right: #fdc030 10px groove;
+  .cuerpo{
+    display: inline-flex;
+    padding: 0px;
+    margin: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    align-content: center;
+    max-width: 2000px;
     }
 
-    address{
-      color: white;
-      font-size: 20px;
-      text-align: center;
-      -webkit-column-count: 3;
-      -moz-column-count: 3;
-      column-count: 3;
-      margin-top: 20px;
-    }
+  address{
+    display: flex;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
 
-    header{
-      align-self: flex-end;
-      margin:10px;
-      padding: 0px;
-      text-align: center;
-      margin-right: 50px;
-      opacity: 65%;
-     }
+  .referencias {
+    align-content: center;
+  }
 
-     footer{
-      align-self: flex-end;
-      margin:10px;
-      padding: 0px;
-      text-align: center;
-      margin-right: 50px;
-      opacity: 65%;
-     
-     }
-     .perfil{
-      align-content: center;
-     }
+  header{
+    align-self: flex-end;
+    margin:10px;
+    padding: 0px;
+    text-align: center;
+    margin-right: 50px;
+    opacity: 65%;
+   }
+
+  footer{
+  align-self: flex-end;
+  margin:10px;
+  padding: 0px;
+  text-align: center;
+  margin-right: 50px;
+  opacity: 65%;   
+  }
+    
+
+/* Crear columnas de ancho diferente que se colocan una a continuación de la otra */
+.columna {
+float: left;
+padding: 10px;
+min-height: 500px;
+}
+
+.izquierda {
+width: 25%;
+border: #fdc030 10px groove;
+background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+.derecha {
+width: 75%;
+border: #fdc030 10px groove;
+background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+.izq {
+  width: 25%;
+  }
+  
+  .der {
+  width: 25%;
+  }
+
+/* Clear floats despues de las columnas para eliminar la superposición */
+.filla:after {
+content: "";
+display: table;
+clear: both;
+}
+
 /* estilos para imágenes https://www.w3schools.com/css/css3_images.asp */
 /* posicionamiento de imágenes https://www.w3schools.com/css/css_positioning.asp */
-
-.imagen{
-  float:inherit;
-  position:relative;
-  padding: 0px;
-  margin:0px;
-
-  right: 23px;
-}
 
 .iresponsive {
     padding: 0 6px;
     float: left;
     width: 50%;
-    border-radius: 100%;
   }
 
 /* Responsive layout - cuando el ancho de pantalla es menor a 600px, muestra las columnas apiladas. */
 /* Así conseguimos que el contenido se vea bien en dispositvos móviles */
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 600px) {
     .columna {
       width: 100%;
     }
-
-
 
     .iresponsive {
         width: 100%;

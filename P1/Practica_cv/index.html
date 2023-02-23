@@ -1,23 +1,24 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-    <title>Obi-wan CV</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obi-Wan CV</title>
 
    <!-- Hoja de estilo -->
-   <link rel="stylesheet" href="2c-template.css">
-</head>
+   <link rel="stylesheet" href="2c-template.css">    
 
+</head>
 <body>
     <header>
         <img src="Jedi_Order.png" width="120px">    
     </header>
     <h1>OBI-WAN KENOBI</h1>
     <div class="cuerpo">
-    <aside>
-    <h2>Sobre mí</h2>
+    <div class="fila">
+      <div class="columna izquierda">
+        <h2>Sobre mí</h2>
     <img src="Foto_de_Perfil.jpg" alt="Obi-Wan"  width="200px" style="border-radius: 1000px";>
     <p>
         ¿Qué tal? Me llamo Obi-Wan Kenobi y soy un Maestro Jedi perteneciente 
@@ -46,8 +47,8 @@
     <p>Si quieres saber más sobre mí pulsa sobre la imagen</p>
     <button><a href="https://victorhidalgo2.github.io/2022-2023-CSAAI-Practicas/P1/Practica_cv/about.html">
         <img src="obi wan.gif" alt="OBI WAN" width="200" /></a></button>
-    </aside>
-    <main>
+      </div>
+      <div class="columna derecha">
         <h2>Estudios</h2>
             <ul>
                 <li>Aprendiz Iniciado Jedi (Youngling) con el Maestro Yoda</li>
@@ -83,30 +84,37 @@
                     que desembocaría en las Guerras Clon</li>
             </ul>
         <h2>Referencias</h2>
-        <address>
+        <div class="fila">
+            <div class="columna izq">
             <img src="QuiGon.jpg" alt="Qui-Gon"  width="150px" style="border-radius: 50px";>
             <p><b>Qui-Gon Jinn</b><br></p>
                 <p>Maestro</p>
             <img src="yoda.jpeg" alt="yoda"  width="250px" style="border-radius: 50px";>
             <p><b>Yoda</b><br></p>
                 <p>Maestro</p>
+            </div>
+            <div class="columna der">
             <img src="anakin.jpg" alt="anakin"  width="200px" style="border-radius: 50px";>
             <p><b>Anakin Skywalker</b><br></p>
             <p>Padawan, Amigo</p>
             <img src="Ahsoka.jpg" alt="Ahsoka"  width="150px" style="border-radius: 50px";>
             <p><b>Ahsoka Tano</b><br></p>
             <p>Padawan de Skywalker, Amiga</p>
+            </div>
+            <div class="columna der">
             <img src="Hondo_ohnaka.jpg" alt="Hondo"  width="150px" style="border-radius: 50px";>
             <p><b>Hondo Onaka</b><br></p>
-            <p>Pirata</p>
+            <p>Asociado ocasional, Pirata</p>
             <img src="Bail_Organa.jpg" alt="Bail"  width="150px" style="border-radius: 50px";>
             <p><b>Bail Organa</b><br></p>
             <p>Amigo</p>
-        </address>
-    </main>
-</div>
-<footer>
-    <img src="republic.png" width=120px style="border-radius: 1000px">
-    </footer>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <footer>
+        <img src="republic.png" width=120px style="border-radius: 1000px">
+        </footer>
 </body>
 </html>
