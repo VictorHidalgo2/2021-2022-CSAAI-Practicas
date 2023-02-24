@@ -71,16 +71,11 @@
     color: white;
   }
 
-  .foto1 {
-    padding: 10px;
-    margin: 10px;
-    float: right;
+  button {
+    font-size: 30px;
   }
-  .foto2 {
-    padding: 10px;
-    margin: 10px;
-    float: left;
-  }
+
+
 
 
   /* Crear columnas de ancho diferente que se colocan una a continuación de la otra */
@@ -91,15 +86,11 @@
   }
   
   .izquierda {
-  width: 25%;
-  border: #fdc030 10px groove;
-  
+  width: 50%;
   }
   
   .derecha {
-  width: 75%;
-  border: #fdc030 10px groove;
-  
+  width: 50%;
   }
   
   /* Clear floats despues de las columnas para eliminar la superposición */
@@ -122,7 +113,7 @@
   /* Así conseguimos que el contenido se vea bien en dispositvos móviles */
   
   @media screen and (max-width: 600px) {
-      .cuerpo {
+      .columna {
         width: 100%;
       }
   
