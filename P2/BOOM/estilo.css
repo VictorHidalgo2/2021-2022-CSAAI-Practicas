@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    background-color: black;
+    align-content: center;
+    border: #73ff00 10px dotted;
+    margin-left: 500px;
+    margin-right: 500px;
+  }
+
+  p {
+    color: #73ff00;
+    font-weight: bold;
+    font-size: 80px;
+    text-align: center;
+  }
+  button {
+    font-size: 50px;
+  }
+
+  .botones_crono {
+    text-align: center;
+    background-color: black;
+    color: #ff0000;
+    font-size: 50px;
+  }
+  .botones_num {
+    text-align: center;
+    background-color: black;
+    color: #73ff00;
+    font-size: 50px;
+  }
+
+  main {
+    text-align: center;
+  }
+
+  .clave {
+    text-align: center;
+    background-color: black;
+    color: #ff0000;
+    font-size: 50px;
+    height: 65px;
+    width: 150px
+  }
+
+  .celdas {
+    text-align: center;
+    background-color: black;
+    color: #ff0000;
+    font-size: 50px;
+  }
+
+  .correcto {
+    color: #73ff00;
+  }
+  .incorrecto{
+    color: #ff0000;
+
+  }
