@@ -123,28 +123,14 @@ projectileY = canvas.height - projectileSize;
 let angle = 45;
 let velocity = 50;
 time = 0;
+g = 9.81;
 gameRunning = false;
 var distancia = Math.sqrt(Math.pow(xo - xop, 2) + Math.pow(yo - yop, 2));
+var tirolanzado=false;
 
 //-- Función principal de actualización
 function lanzar() {
-    //-- Implementación del algoritmo de animación:
-    //-- 1) Actualizar posición de los elementos
-    var radians = angle * Math.PI / 180; 
     
-    //-- Actualizar las posiciones según la velocidad actual
-    var radians = angle * Math.PI / 180;
-    var xop = velocity * Math.cos(radians) * time;
-    var yop = yp - projectileSize - velocity * Math.sin(radians) * time + 0.5 * 9.81 * time * time;
-
-    //-- Actualizar las velocidades según las aceleraciones
-    projectileX = xop;
-    projectileY = yop;
-
-    time += 0.1;
-
-  
-    //-- 2) Borrar el canvas
     ctx.clearRect(0, 0, canvas.width, canvas.height);
   
     //-- 3) Pintar los elementos en el canvas
@@ -155,6 +141,9 @@ function lanzar() {
     //-- 4) Repetir
     requestAnimationFrame(lanzar);
 
+    if (tirolanzado) {
+        tiroP();}
+
     // Verificar si el proyectil ha tocado la parte inferior del canvas
     if (((xop > (xo -20)) && (xop < (xo+5))) && (((yo +20) > yop) && ((yo-20) <yop))) {
         console.log("Has ganado");
@@ -163,6 +152,7 @@ function lanzar() {
         ctx.fillText("¡Has ganado!", 80, 100);
         crono.stop();
         velocity = stop();
+        tirolanzado=false
 
     } else if ((xop >= canvas.width || xop <= 0) || (yop >= canvas.height || yop <= 0 )){ 
         console.log("Has perdido");
@@ -170,10 +160,9 @@ function lanzar() {
         ctx.fillStyle = 'red';
         ctx.fillText("¡Has perdido!", 80, 100);
         crono.stop();
+        tirolanzado=false
 
     }
-    //-- Actualizar el tiempo
-    time += 0.1;
     }
 
 const disp = document.getElementById("display");
@@ -242,7 +231,7 @@ function dibujarO(x,y) {
 
 //-- Función de retrollamada del botón de disparo
 btnLanzar.onclick = () => {
-    lanzar();
+    ej_tiro();
     console.log("Start!!");
     crono.start();
     }
@@ -252,3 +241,16 @@ btnIniciar.onclick = () => {
     console.log("Reset!");
     crono.reset();
     }
+
+    function tiroP() {
+        xop = xp + velocity * Math.cos(angle* Math.PI / 180) * time;
+        yop = yp - velocity * Math.sin(angle* Math.PI / 180) * time +0.5 * g * time**2;
+        time += 0.1;
+      }
+      
+      function ej_tiro(){
+        tirolanzado=true
+        tiroP();
+      }
+
+lanzar()
