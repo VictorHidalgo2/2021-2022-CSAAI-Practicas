@@ -193,8 +193,9 @@ const flipCard = card => {
             `
             // Paramos el loop porque el juego ha terminado
             clearInterval(state.loop)
+            win_sound.play();
         }, 1000)
-        win_sound.play();    }
+    }
 }
 
 const flipBackCards = () => {
