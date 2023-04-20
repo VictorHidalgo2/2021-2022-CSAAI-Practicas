@@ -29,7 +29,8 @@ const generateGame = () => {
     }
 
     //-- Creamos un array con los emojis que vamos a utilizar en nuestro juego
-    const img = ['obi_wan.png', 'anakin.png', 'ahsoka.png', 'yoda.png', 'windu.png', 'dooku.png', 'sidious.png', 'maul.png', 'grievous.png', 'cad_bane.png']
+    const img = ['obi_wan.png', 'anakin.png', 'ahsoka.png', 'yoda.png', 'windu.png', 'dooku.png', 'sidious.png', 'maul.png', 'grievous.png', 'cad_bane.png','bobafett.png',
+    'chewie.png', 'ewok.png', 'mando.png', 'jabba.png', 'kitfisto.png', 'stormtrooper.png', 'vader.png', 'ventress.png', 'Luke_Skywalker.png', 'Savage.png']
     //-- Elegimos un subconjunto de emojis al azar, así cada vez que comienza el juego
     // es diferente.
     // Es decir, si tenemos un array con 10 emojis, vamos a elegir el cuadrado de las

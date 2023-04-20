@@ -130,10 +130,16 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 50pt;
+    font-size: 21pt;
     color: yellow;
 }
 
 .highlight {
     color: #00ffff;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: StarWars;
+    color: rgb(255, 233, 36);
 }
